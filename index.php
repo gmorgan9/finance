@@ -22,7 +22,7 @@ include("path.php");
   <!-- Custome Styles -->
   <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
 
-  <title>Documentation</title>
+  <title>Finances</title>
 </head>
 <body>
 
