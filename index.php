@@ -1,5 +1,6 @@
 <?php 
 	include('functions.php');
+  include('path.php');
   
 if (isLoggedIN()) {
 	header('location: login.php');
