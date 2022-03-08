@@ -1,6 +1,5 @@
 <?php 
 session_start();
-include('path.php');
 
 // connect to database
 $db = mysqli_connect('localhost', 'gmorg', 'gmorgpass', 'finances');
