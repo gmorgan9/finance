@@ -1,7 +1,7 @@
 <?php
 
 
-function usersOnly($redirect = '/login.php')
+function usersOnly($redirect = '/notLoggedIn.php')
 {
     if (empty($_SESSION['id'])) {
         $_SESSION['message'] = 'You need to login first';
