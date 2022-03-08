@@ -2,7 +2,7 @@
 <?php 
 
 session_start();
-usersOnly();
+//usersOnly();
 ?>
 
 <!DOCTYPE html>
