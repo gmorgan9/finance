@@ -8,7 +8,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Section - Dashboard</title>
+    <title>Dashboard</title>
     <meta name="viewport" content="width=device-width">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
