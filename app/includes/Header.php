@@ -21,7 +21,7 @@
         </li>
       <?php else: ?>
         <li><a href="<?php echo BASE_URL . '/register.php' ?>">Sign Up</a></li>
-        <li><a href="<?php echo BASE_URL . '/login.php' ?>">Login</a></li>
+        <li><a href="<?php echo BASE_URL . '/' ?>">Login</a></li>
       <?php endif; ?>
     </ul>
 </header>
