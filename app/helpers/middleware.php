@@ -1,7 +1,6 @@
 <?php
-include(ROOT_PATH . "../path.php");
 
-function usersOnly($redirect = BASE_URL . '/notLoggedin.php')
+function usersOnly($redirect = '/notLoggedin.php')
 {
     if (empty($_SESSION['id'])) {
         $_SESSION['message'] = 'You need to login first';
