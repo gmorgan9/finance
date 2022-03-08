@@ -1,63 +1,29 @@
-<?php include('path.php'); ?>
-
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+ 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/images/fav.png">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
-
-  <!-- Custom Styling -->
-  <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
-
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{ font: 14px sans-serif; text-align: center; }
+    </style>
 </head>
-
 <body>
-
-<?php include(ROOT_PATH . "/app/includes/Header.php"); ?>
-
-  <div class="auth-content">
-
-    <form action="login.php" method="post">
-      <h2 class="form-title">Login</h2>
-
-      <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
-
-      <div>
-        <label>Username</label>
-        <input type="text" name="username" value="<?php echo $username; ?>" class="text-input">
-      </div>
-      <div>
-        <label>Password</label>
-        <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
-      </div>
-      <div>
-        <button type="submit" name="login-btn" class="btn btn-big">Login</button>
-      </div>
-      <p>Or <a href="<?php echo BASE_URL . '/register.php' ?>">Sign Up</a></p>
-    </form>
-
-  </div>
-
-
-  <!-- JQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- Custom Script -->
-  <script src="assets/js/scripts.js"></script>
-
+    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+    <p>
+        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+        <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+    </p>
 </body>
-
 </html>
