@@ -4,6 +4,7 @@
     </a>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
+            <li>
             <a href="/">
             <i class="fa fa-globe"></i>
             Public</a>
