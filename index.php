@@ -28,12 +28,12 @@ session_start();
 </head>
 <body>
 
-<?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/Header.php"); ?>
 
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
 
-<?php include(ROOT_PATH . "/app/includes/adminSidebar.php") ?>
+<?php include(ROOT_PATH . "/app/includes/Sidebar.php") ?>
         
 <!-- Admin Content -->
 <div class="admin-content">
