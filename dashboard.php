@@ -29,8 +29,15 @@
 </head>
 <body>
 
-<?php include(ROOT_PATH . "/app/includes/Header.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/DashHeader.php"); ?>
 
+<!-- Admin Page Wrapper -->
+<div class="admin-wrapper">
+
+<?php include(ROOT_PATH . "/app/includes/DashSidebar.php") ?>
+        
+<!-- Admin Content -->
+<div class="admin-content">
 
 <div class="content">
 
@@ -39,6 +46,9 @@
     <?php include(ROOT_PATH . '/app/includes/messages.php'); ?>
 
 </div>
+
+</div>
+<!-- // Admin Content -->
 
 </div>
 <!-- // Page Wrapper -->
