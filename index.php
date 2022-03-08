@@ -14,10 +14,10 @@ session_start();
     <link rel="icon" type="image/x-icon" href="fav.png">
 
     <!-- Custom Styling -->
-    <link rel="stylesheet" href="../assets/css/style.css?v=<?php echo time(); ?>">  
+    <link rel="stylesheet" href="/assets/css/style.css?v=<?php echo time(); ?>">  
 
     <!-- Admin Styling -->
-    <link rel="stylesheet" href="../assets/css/admin.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="/assets/css/admin.css?v=<?php echo time(); ?>">
 
     <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
