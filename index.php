@@ -1,50 +1,65 @@
-<?php include("path.php"); ?>
-<?php 
-
-//session_start();
-//usersOnly();
+<?php include('path.php'); ?>
+<?php include(ROOT_PATH . "/app/controllers/users.php"); 
+guestsOnly();
 ?>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Dashboard</title>
-    <meta name="viewport" content="width=device-width">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="fav.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Custom Styling -->
-    <link rel="stylesheet" href="../assets/css/style.css?v=<?php echo time(); ?>">  
-
-    <!-- Admin Styling -->
-    <link rel="stylesheet" href="../assets/css/admin.css?v=<?php echo time(); ?>">
-
-    <!-- Font Awesome -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/fav.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
+
+  <title>Login</title>
 </head>
+
 <body>
 
-<?php include(ROOT_PATH . "/app/includes/Header.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+
+  <div class="auth-content">
+
+    <form action="login.php" method="post">
+      <h2 class="form-title">Login</h2>
+
+      <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
+
+      <div>
+        <label>Username</label>
+        <input type="text" name="username" value="<?php echo $username; ?>" class="text-input">
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
+      </div>
+      <div>
+        <button type="submit" name="login-btn" class="btn btn-big">Login</button>
+      </div>
+      <p>Or <a href="<?php echo BASE_URL . '/register.php' ?>">Sign Up</a></p>
+    </form>
+
+  </div>
 
 
-<div class="content">
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <h2 class="page-title">Dashboard</h2>
-
-    <?php include(ROOT_PATH . '/app/includes/messages.php'); ?>
-
-</div>
-
-</div>
-<!-- // Page Wrapper -->
-
-<!-- Custom Script -->
-<script src="../assets/js/scripts.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/scripts.js"></script>
 
 </body>
+
 </html>
