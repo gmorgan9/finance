@@ -17,7 +17,7 @@
                     <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
                 </a>
                 <ul>
-                <?php if(isLoggedIn()){?>
+                <?php if(!isLoggedIn()){?>
                     <li><a href="<?php echo BASE_URL . '/logout.php'; ?>" class="logout">Logout</a></li>
                     <?php }else{ ?>
                     <li><a href="<?php echo BASE_URL . '/login.php'; ?>" class="logout">Login</a></li>
