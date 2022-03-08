@@ -1,44 +1,59 @@
+<?php include("../path.php"); ?>
 <?php 
-include("path.php");
-// include(ROOT_PATH . "/app/controllers/topics.php");
+include(ROOT_PATH . "/app/controllers/posts.php"); 
+session_start();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Font Awesome -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finances</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="fav.png">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="../assets/css/style.css?v=<?php echo time(); ?>">  
+
+    <!-- Admin Styling -->
+    <link rel="stylesheet" href="../assets/css/admin.css?v=<?php echo time(); ?>">
+
+    <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/images/fav.png">
-
-  <!-- Custome Styles -->
-  <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
-
-  <title>Finances</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
 </head>
 <body>
 
-<?php include(ROOT_PATH . "/app/includes/Header.php")  
-// include(ROOT_PATH . "/app/includes/main-heading.php") 
-// include(ROOT_PATH . "/app/includes/messages.php"); 
-?>
+<?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
 
+<!-- Admin Page Wrapper -->
+<div class="admin-wrapper">
 
+<?php include(ROOT_PATH . "/app/includes/adminSidebar.php") ?>
+        
+<!-- Admin Content -->
+<div class="admin-content">
 
-  <!-- Page Wrapper -->
-  <div class="page-wrapper">
+<div class="content">
 
-    
+    <h2 class="page-title">Dashboard</h2>
 
-  </div>
-  <!-- // Page Wrapper -->
+    <?php include(ROOT_PATH . '/app/includes/messages.php'); ?>
+
+</div>
+
+</div>
+<!-- // Admin Content -->
+
+</div>
+<!-- // Page Wrapper -->
+
+<!-- Custom Script -->
+<script src="../assets/js/scripts.js"></script>
+
 </body>
 </html>
