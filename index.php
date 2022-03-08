@@ -1,7 +1,7 @@
 <?php include("path.php"); ?>
 <?php 
 
-session_start();
+//session_start();
 //usersOnly();
 ?>
 
