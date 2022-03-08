@@ -1,7 +1,7 @@
 <?php 
 	include('functions.php');
   
-if (isLoggedIN()) {
+if (!isLoggedIN()) {
 	header('location: login.php');
 }
     
