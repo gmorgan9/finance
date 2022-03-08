@@ -1,58 +1,31 @@
-<?php
-session_start();
-
-    // connect to the database
-    $db = mysqli_connect("localhost","gmorg","gmorgpass","finances");
-
-    if(!$db){
-        die("connection error...".mysqli_connect_error());
-    }else{
-        echo "You are successfully connected.";
-    }
-session_start();
-// after form submitted insert values in to tables.
-if (isset($_POST['username'])){
-        // removes backslashes
-	$username = stripslashes($_REQUEST['username']);
-        //escapes special characters in a string
-	$username = mysqli_real_escape_string($db,$username);
-	$password = stripslashes($_REQUEST['password']);
-	$password = mysqli_real_escape_string($db,$password);
-	//Checking for user already exist in the table or not
-        $query = "SELECT * FROM `registration` WHERE username='$username'
-and password='$password'";
-	$result = mysqli_query($db,$query) or die(mysql_error());
-	$rows = mysqli_num_rows($result);
-        if($rows==1){
-	    $_SESSION['username'] = $username;
-            // Redirect user to index.php
-	    header("Location: index.php");
-         }else{
-	echo "<div class='form'>
-<h3>Username OR Password is incorrect.</h3>
-<br/><a href='login.php'>Login</a></div>";
-	}
-    }
-?>
-
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Login</title>
+  <title>Registration system PHP and MySQL</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<div class="form">
-<h1>Log In</h1>
-<form action="" method="post" name="login">
-<input type="text" name="username" placeholder="User Name" required>
-<br>
-<input type="password" name="password" placeholder="Password" required>
-<br>
-<input name="submit" type="submit" value="Login">
-</form>
-<p>Not registered yet? <a href='registration.php'>Register Here</a></p>
-</div>
+  <div class="header">
+  	<h2>Login</h2>
+  </div>
+	 
+  <form method="post" action="login.php">
+  	<?php include('errors.php'); ?>
+  	<div class="input-group">
+  		<label>Username</label>
+  		<input type="text" name="username" >
+  	</div>
+  	<div class="input-group">
+  		<label>Password</label>
+  		<input type="password" name="password">
+  	</div>
+  	<div class="input-group">
+  		<button type="submit" class="btn" name="login_user">Login</button>
+  	</div>
+  	<p>
+  		Not yet a member? <a href="register.php">Sign up</a>
+  	</p>
+  </form>
 </body>
 </html>
