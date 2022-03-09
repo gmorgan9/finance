@@ -1,24 +1,11 @@
-<!-- <header>
-  <a href="/" class="logo">
-    <h1 class="logo-text"><span>Garrett</span>Inspires</h1>
-  </a>
-  <i class="fa fa-bars menu-toggle"></i>
-    
-    </div>
-    <hr style="width:50%">
-    
-</header> -->
-
-
-
-  <header>
+<header>
     <a href="/" class="logo">
-      <h1 class="logo-text"><span>Garrett</span>Inspires</h1>
+      <h1 class="logo-text"><span>Morgan</span>Finances</h1>
     </a>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
     <?php if(isLoggedIn()){?>
-      <li><a href="index.php">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li><a href="transactions.php">Transactions</a></li>
       <li><a href="expenses.php">Expenses</a></li>
       <li><a href="income.php">Income</a></li>
