@@ -402,6 +402,18 @@ pre {
   color: white;
   background-color: rgb(201, 92, 84);
 }
+#currinc {
+  color: white;
+  background-color: rgb(64, 128, 220);
+}
+#totexp {
+  color: white;
+  background-color: rgb(201, 92, 84);
+}
+#totinc {
+  color: white;
+  background-color: rgb(116, 181, 102);
+}
 
 .dash-cards {
   margin-top: 25px;
