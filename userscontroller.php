@@ -2,7 +2,7 @@
 
 include("functions.php");
 include("middleware.php");
-include("validateUser.php");
+include("validateUsers.php");
 
 
 $table = 'users';
