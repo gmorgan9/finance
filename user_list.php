@@ -56,18 +56,24 @@
     </thead>
     <tbody>
         <?php
-if( $query = mysql_query("SELECT * FROM users ORDER by id");) {
-while($row = mysql_fetch_array($query)){
-    echo "<tr>";
-    echo "<td>".$row['id']."</td>";
-    echo "<td>".$row['username']."</td>";
-    echo "<td>".$row['email']."</td>";
-    echo "<td>".$row['user_type']."</td>";
-    echo "</tr>";
-} else {
-    echo '<b>MySQL error:</b><br>' . mysql_error() . '<br />';
-  }
+
+
+$sql = "SELECT * FROM users ORDER by id";
+$result = mysqli_query($conn, $sql) or die("error");
+if(mysqli_num_rows($result) > 0) {
+    while($users = mysqli_fetch_assoc($result)) {
+        $id = $users['id'];
+        $username = $users['username'];
+        $email = $users['email'];
+        $user_type = $users['user_type'];
+    }
+}
 ?>
+
+<tr><?php echo $id; ?></tr>
+<tr><?php echo $username; ?></tr>
+<tr><?php echo $email; ?></tr>
+<tr><?php echo $user_type; ?></tr>
 
 </tbody>
 </table>
