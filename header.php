@@ -25,20 +25,20 @@
           </a>
           <div class="nav-list-log">
           <ul class="nav">
-      <li class="nav-list-item"><a class="nav-list-link" href="index.php">Home</a></li>
-      <li class="nav-list-item"><a class="nav-list-link" href="transactions.php">Transactions</a></li>
-      <li class="nav-list-item"><a class="nav-list-link" href="expenses.php">Expenses</a></li>
-      <li class="nav-list-item"><a class="nav-list-link" href="income.php">Income</a></li>
-      <li class="nav-list-item"><a class="nav-list-link" href="budget.php">Budget</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="transactions.php">Transactions</a></li>
+      <li><a href="expenses.php">Expenses</a></li>
+      <li><a href="income.php">Income</a></li>
+      <li><a href="budget.php">Budget</a></li>
       <?php if(isLoggedIn()){?>
         <div id="profilelogout">
-          <li class="nav-list-item"><a id="profile" href="profileinfo.php">Profile</a></li>
-          <li class="nav-list-item"><a id="logout" href="index.php?logout='1'">Logout</a></li>
+          <li><a href="profileinfo.php">Profile</a></li>
+          <li><a href="index.php?logout='1'">Logout</a></li>
         </div>
 		  <?php }else{ ?>
         <div id="loginreg">
-          <li class="nav-list-item"><a id="login" href="login.php">Login</a></li>
-          <li class="nav-list-item"><a id="register" href="register.php">Register</a></li>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="register.php">Register</a></li>
         </div>
 		  <?php } ?>
     </div>
