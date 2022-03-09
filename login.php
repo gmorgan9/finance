@@ -29,7 +29,7 @@ if (isLoggedIN()) {
     
 </head>
 <body>
-<?php include("header.php") ?>
+<?php include("includes/header.php") ?>
 	<div class="log-header">
 		<h2>Login</h2>
 	</div>
