@@ -1,28 +1,23 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <!-- Font Awesome -->
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-            crossorigin="anonymous">
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
-            rel="stylesheet">
-
-        <!-- Custom Styles -->
+<html>
+<head>
+	<title>Profile Info</title>
+	<meta name="viewport" content="width=device-width">
+	
+	<!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css?v=<?php echo time(); ?>">
     <!-- Admin Styles -->
     <link rel="stylesheet" href="css/admin.css?v=<?php echo time(); ?>">
 
-        <title>Admin Section - Edit User</title>
+	<!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
+    rel="stylesheet">
     </head>
 
     <body>
@@ -34,13 +29,6 @@
 
         <?php include("includes/sidebar.php"); ?>
 
-
-            <!-- Admin Content -->
-            <div class="admin-content">
-                <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add User</a>
-                    <a href="index.php" class="btn btn-big">Manage Users</a>
-                </div>
 
 
                 <div class="content">
