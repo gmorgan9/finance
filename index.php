@@ -34,8 +34,8 @@ if (!isLoggedIN()) {
 	<!-- <div class="header">
 		<h2>Dashboard</h2>
   </div> -->
-  <?php include("/includes/header.php") ?>
-  <?php include("/includes/sidebar.php") ?>
+  <?php include("includes/header.php") ?>
+  <?php include("includes/sidebar.php") ?>
 
 
   <div class="dash-cards">
