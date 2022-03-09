@@ -39,9 +39,10 @@ if (!isLoggedIN()) {
 	<!-- <div class="header">
 		<h2>Dashboard</h2>
   </div> -->
+  <div class="admin-wrapper">
   <?php include("includes/header.php") ?>
 
-  <div class="admin-wrapper">
+  
   <?php include("includes/sidebar.php") ?>
 
 
