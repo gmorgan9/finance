@@ -38,22 +38,22 @@
                     <h2 class="page-title">Edit User</h2>
 
                     <form action="edit.php" method="post">
-                        <input type="hidden" name="id" value="<?php echo $id; ?>" >
+                        <input type="hidden" name="id" value="" >
                         <div>
                             <label>Username</label>
-                            <input type="text" name="username" value="<?php echo $username; ?>" class="text-input">
+                            <input type="text" name="username" value="" class="text-input">
                         </div>
                         <div>
                             <label>Email</label>
-                            <input type="email" name="email" value="<?php echo $email; ?>" class="text-input">
+                            <input type="email" name="email" value="" class="text-input">
                         </div>
                         <div>
                             <label>Password</label>
-                            <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
+                            <input type="password" name="password" value="" class="text-input">
                         </div>
                         <div>
                             <label>Password Confirmation</label>
-                            <input type="password" name="passwordConf" value="<?php echo $passwordConf; ?>" class="text-input">
+                            <input type="password" name="passwordConf" value="" class="text-input">
                         </div>
                         <div>
                             <?php if (isAdmin()): ?>
