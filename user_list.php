@@ -54,7 +54,7 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 $result = mysqli_query($con,"SELECT * FROM users ORDER by id");
 
 ?>
-<table style="border=1">
+<table>
     <thead>
         <th>ID</th>
         <th>Username</th>
@@ -63,15 +63,17 @@ $result = mysqli_query($con,"SELECT * FROM users ORDER by id");
     </thead>
 <?php
 while($row = mysqli_fetch_array($result))
-{ ?>
-<tr>
-<td><?php echo . $row['id'] . ?></td>;
-<td><?php echo . $row['username'] . ?></td>;
-<td><?php echo . $row['user_type'] . ?></td>;
-</tr>
-<?php } ?>
-</table>
-<?php
+{
+echo "<tr>";
+echo "<td>" . $row['id'] . "</td>";
+echo "<td>" . $row['username'] . "</td>";
+echo "<td>" . $row['user_type'] . "</td>";
+echo "<td><a href='edit.php?id='" . $user['id'] . "class='edit'>edit</a></td>";
+echo "<td><a href='index.php?delete_id='" . $user['id'] . " class='delete'>delete</a></td>";
+echo "</tr>";
+}
+echo "</table>";
+
 mysqli_close($con);
 ?>
 
