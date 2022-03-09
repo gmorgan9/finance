@@ -1,4 +1,4 @@
-<?php include("functions.php") ?>
+<?php include("app/database/functions.php") ?>
 
 <!DOCTYPE html>
 <html>
@@ -24,7 +24,7 @@
 
     <body>
         
-    <?php include("includes/header.php") ?>
+    <?php include("app/includes/header.php") ?>
 
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">

@@ -1,8 +1,8 @@
 <?php
 
-include(ROOT_PATH . "/app/database/functions.php");
-include(ROOT_PATH . "/app/helpers/middleware.php");
-include(ROOT_PATH . "/app/helpers/validateUser.php");
+include("/app/database/functions.php");
+include("/app/helpers/middleware.php");
+include("/app/helpers/validateUser.php");
 
 
 $table = 'users';
