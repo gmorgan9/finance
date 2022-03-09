@@ -10,7 +10,12 @@ if (!isAdmin()) {
 <head>
 	<title>Admin - Create user</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
+	
+	<!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css?v=<?php echo time(); ?>">
+    <!-- Admin Styles -->
+    <link rel="stylesheet" href="css/admin.css?v=<?php echo time(); ?>">
+
 </head>
 <body>
 	<div class="log-header">
