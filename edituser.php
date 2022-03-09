@@ -34,7 +34,7 @@ if (!isAdmin()) {
     $result = mysqli_query($con,"SELECT  FROM users ORDER by id")
 ?>
 	
-	<form method="post" action="create_user.php">
+	<form method="post" action="edituser.php">
 
 		<?php echo display_error(); ?>
 
