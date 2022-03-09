@@ -63,14 +63,6 @@ adminOnly();
                             <label>Email</label>
                             <input type="email" name="email" value="<?php echo $email; ?>" class="text-input">
                         </div>
-                        <div class="input-group">
-		                	<label>User type</label>
-		                	<select name="user_type" id="user_type" >
-		                		<option value="<?php echo $user_type; ?>"></option>
-		                		<option value="admin">Admin</option>
-		                		<option value="user">User</option>
-		                	</select>
-		                </div>
                         <div>
                             <label>Password</label>
                             <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
