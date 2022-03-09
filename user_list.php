@@ -70,10 +70,10 @@ if(mysqli_num_rows($result) > 0) {
 }
 ?>
 
-<tr><?php echo $id; ?></tr>
-<tr><?php echo $username; ?></tr>
-<tr><?php echo $email; ?></tr>
-<tr><?php echo $user_type; ?></tr>
+<td><?php echo $id; ?></td>
+<td><?php echo $username; ?></td>
+<td><?php echo $email; ?></td>
+<td><?php echo $user_type; ?></td>
 
 </tbody>
 </table>
