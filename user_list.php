@@ -65,9 +65,9 @@ $result = mysqli_query($con,"SELECT * FROM users ORDER by id");
 while($row = mysqli_fetch_array($result))
 { ?>
 <tr>
-<td><?php . $row['id'] . ?></td>;
-<td><?php . $row['username'] . ?></td>;
-<td><?php . $row['user_type'] . ?></td>;
+<td><?php echo . $row['id'] . ?></td>;
+<td><?php echo . $row['username'] . ?></td>;
+<td><?php echo . $row['user_type'] . ?></td>;
 </tr>
 <?php } ?>
 </table>
