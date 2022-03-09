@@ -37,7 +37,7 @@
 
                     <h2 class="page-title">Edit User</h2>
 
-                    <form action="edit.php" method="post">
+                    <form action="edituser.php" method="post">
                         <input type="hidden" name="id" value="" >
                         <div>
                             <label>Username</label>

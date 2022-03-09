@@ -72,8 +72,10 @@ echo "<tr>";
 echo "<td>" . $row['id'] . "</td>";
 echo "<td>" . $row['username'] . "</td>";
 echo "<td>" . $row['user_type'] . "</td>";
-
-echo "<td><a href='edituser.php?id=" . $row['id'] . "'class='edit';>edit</a></td>";
+?>
+<td><a href="edituser.php?id=<?php echo $row['id']; ?>" class="edit">edit</a></td>
+<td><a href="user_list.php?delete_id=<?php echo $row['id']; ?>" class="delete">delete</a></td>
+<?php
 echo "</tr>";
 }
 echo "</table>";
