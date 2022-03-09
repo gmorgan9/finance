@@ -22,15 +22,19 @@
 
     <body>
         
-    <?php include("includes/header.php"); ?>
+    <?php include("includes/header.php") ?>
 
-        <!-- Admin Page Wrapper -->
-        <div class="admin-wrapper">
+<!-- Admin Page Wrapper -->
+<div class="admin-wrapper">
 
-        <?php include("includes/sidebar.php"); ?>
+<?php include("includes/sidebar.php") ?>
+        
+<!-- Admin Content -->
+<div class="admin-content">
 
+<div class="content">
 
-
+    <h2 class="page-title">Expenses</h2>
                 <div class="content">
 
                     <h2 class="page-title">Edit User</h2>
