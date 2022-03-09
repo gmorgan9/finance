@@ -174,7 +174,7 @@ function isAdmin()
 
 function userAdmin()
 {
-	if ($usertype == 'admin' ) {
+	if ($_SESSION['user']['user_type'] == 'admin' ) {
 		return true;
 	}else{
 		return false;
