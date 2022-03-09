@@ -4,7 +4,7 @@ session_start();
 require('connect.php');
 
 // connect to database update
-$db = mysqli_connect('localhost', 'gmorg', 'gmorgpass', 'finances');
+$db = mysqli_connect('localhost', 'gmorg', 'gmorgpass', 'finance');
 
 // variable declaration
 $username = "";
