@@ -39,14 +39,15 @@ if (!isLoggedIN()) {
 	<!-- <div class="header">
 		<h2>Dashboard</h2>
   </div> -->
-  <div class="admin-wrapper">
+  
   <?php include("includes/header.php") ?>
-
+  <div class="admin-wrapper">
   
   <?php include("includes/sidebar.php") ?>
 
 
   <div class="admin-content">
+    <div class="content">
   <div class="dash-cards">
   <div class="card" id="currexp" style="width: 18rem;">
   <div class="card-body">
@@ -90,6 +91,7 @@ if (!isLoggedIN()) {
 </div>
   </div>
 
+  </div>
   </div>
   </div>
 
