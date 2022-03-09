@@ -80,7 +80,7 @@ if(mysqli_num_rows($result) > 0) {
     {
 ?>
     <tr>
-        <td><?php echo $user['id']; ?></td>
+        <td><?php echo $id; ?></td>
         <td><?php echo $user['username']; ?></td>
         <td><?php echo $user['email']; ?></td>
         <td><?php echo $user['user_type']; ?></td>
