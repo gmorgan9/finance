@@ -50,7 +50,7 @@ $num = mysql_numrows($query); //this will count the rows (if exists)
         <input type="hidden" name="id" value="" >
         <div>
             <label>Username</label>
-            <input type="text" name="username" value="<?php echo . $row['id']. ?>" class="text-input">
+            <input type="text" name="username" value="<?php echo . $arr['id']. ?>" class="text-input">
         </div>
         <div>
             <label>Email</label>
