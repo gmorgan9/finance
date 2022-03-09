@@ -56,7 +56,7 @@
     </thead>
     <tbody>
         <?php
-$query = mysql_query("SELECT * FROM users ORDER by id");
+if( $query = mysql_query("SELECT * FROM users ORDER by id");) {
 while($row = mysql_fetch_array($query)){
     echo "<tr>";
     echo "<td>".$row['id']."</td>";
