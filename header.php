@@ -40,10 +40,6 @@
           <li><a href="index.php?logout='1'">Logout</a></li>
         </div>
 		  <?php }else{ ?>
-        <div id="loginreg">
-          <li><a href="login.php">Login</a></li>
-          <li><a href="register.php">Register</a></li>
-        </div>
 		  <?php } ?>
     </div>
     </ul>
