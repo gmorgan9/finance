@@ -16,9 +16,9 @@ if (!isLoggedIN()) {
     <link rel="icon" type="image/x-icon" href="fav.png?v=<?php echo time(); ?>">
 </head>
 <body>
-	<div class="header">
+	<!-- <div class="header">
 		<h2>Dashboard</h2>
-  </div>
+  </div> -->
   <?php include("header.php") ?>
     <div class="main-content">
         <p>
