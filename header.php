@@ -28,13 +28,13 @@
           <li><a href="register.php">Register</a></li>
         </div>
 		  <?php } ?>
+      <?php if(isLoggedIn()){?>
       <li><a href="#">
           <i class="fa fa-user"></i>
           <?php echo $_SESSION['user']['username']; ?>
           <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
         </a>
         <ul>
-      <?php if(isLoggedIn()){?>
         <div id="profilelogout">
           <li><a href="profileinfo.php">Profile</a></li>
           <li><a href="index.php?logout='1'">Logout</a></li>
