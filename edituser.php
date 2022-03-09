@@ -22,18 +22,6 @@ if (!isAdmin()) {
 		<h2>Admin - create user</h2>
 	</div>
 
-
-
-    <?php
-    $con=mysqli_connect("localhost","gmorg","gmorgpass","finances");
-    // Check connection
-    if (mysqli_connect_errno())
-    {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    
-    $result = mysqli_query($con,"SELECT  FROM users ORDER by id")
-?>
-	
 	<form method="post" action="edituser.php">
 
 		<?php echo display_error(); ?>
@@ -70,6 +58,5 @@ if (!isAdmin()) {
 			<a href="profileinfo.php" name="btn" class="log-btn">Back</a>
 		</div>
 	</form>
-    <?php } ?>
 </body>
 </html>
