@@ -70,24 +70,15 @@ if(mysqli_num_rows($result) > 0) {
 }
 ?>
 
-<?php 
-    $users = array();
-    while ($user =  mysql_fetch_assoc($records))
-    {
-        $users[] = $user;
-    }
-    foreach ($users as $user)
-    {
-?>
+<?php foreach ($users as $user): ?>
     <tr>
-        <td><?php echo $id; ?></td>
+        <td><?php echo $id ?></td>
         <td><?php echo $user['username']; ?></td>
         <td><?php echo $user['email']; ?></td>
-        <td><?php echo $user['user_type']; ?></td>
+        <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
+        <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">delete</a></td>
     </tr>
-<?php
-    }
-?>
+<?php endforeach; ?>
 
 <td><?php echo $id; ?></td>
 <td><?php echo $username; ?></td>
