@@ -59,7 +59,7 @@
 
 
 $sql = "SELECT * FROM users ORDER by id";
-$result = mysqli_query($conn, $sql) or die("error");
+$result = mysqli_query($db, $sql) or die("error");
 if(mysqli_num_rows($result) > 0) {
     while($users = mysqli_fetch_assoc($result)) {
         $id = $users['id'];
