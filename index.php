@@ -53,7 +53,7 @@ if (!isLoggedIN()) {
   <div class="card" id="currexp" style="width: 18rem;">
   <div class="card-body">
     <img src="assets/images/calendar.png" alt="" style="height: 45px; width: 45px;">
-    <h5 class="card-title">Current Expenses</h5>
+    <h5 class="card-title" style="color:white;">Current Expenses</h5>
     <p class="card-text">...</p>
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
@@ -62,7 +62,7 @@ if (!isLoggedIN()) {
 <div class="card" id="currinc" style="width: 18rem;">
   <div class="card-body">
   <img src="assets/images/calendar.png" alt="" style="height: 45px; width: 45px;">
-    <h5 class="card-title">Current Income</h5>
+    <h5 class="card-title" style="color:white;">Current Income</h5>
     <p class="card-text">...</p>
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
@@ -71,7 +71,7 @@ if (!isLoggedIN()) {
 <div class="card" id="totexp" style="width: 18rem;">
   <div class="card-body">
   <img src="assets/images/comparrows.png" alt="" style="height: 45px; width: 45px;">
-    <h5 class="card-title">Total Expenses</h5>
+    <h5 class="card-title" style="color:white;">Total Expenses</h5>
     <p class="card-text">...</p>
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
@@ -80,7 +80,7 @@ if (!isLoggedIN()) {
 <div class="card" id="totinc" style="width: 18rem;">
   <div class="card-body">
   <img src="assets/images/balance.png" alt="" style="height: 45px; width: 45px;">
-    <h5 class="card-title">Total Income</h5>
+    <h5 class="card-title" style="color:white;">Total Income</h5>
     <p class="card-text">...</p>
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
