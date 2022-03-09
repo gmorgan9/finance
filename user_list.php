@@ -50,13 +50,13 @@
                             <th colspan="2">Action</th>
                         </thead>
                         <tbody>
-                            <?php foreach ($users as $key => $user): ?>
+                            <?php foreach ($user as $key => $users): ?>
                                 <tr>
                                     <td><?php echo $key + 1; ?></td>
-                                    <td><?php echo $user['username']; ?></td>
-                                    <td><?php echo $user['email']; ?></td>
-                                    <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
-                                    <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">delete</a></td>
+                                    <td><?php echo $users['username']; ?></td>
+                                    <td><?php echo $users['email']; ?></td>
+                                    <td><a href="edit.php?id=<?php echo $users['id']; ?>" class="edit">edit</a></td>
+                                    <td><a href="index.php?delete_id=<?php echo $users['id']; ?>" class="delete">delete</a></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
