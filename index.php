@@ -80,7 +80,7 @@ if (!isLoggedIN()) {
 <div class="card" id="totinc" style="width: 18rem;">
   <div class="card-body">
   <img src="assets/images/balance.png" alt="" style="height: 45px; width: 45px;">
-    <h5 class="card-title">Total Income</h5>]
+    <h5 class="card-title">Total Income</h5>
     <p class="card-text">...</p>
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
