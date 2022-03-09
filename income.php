@@ -1,4 +1,4 @@
-<?php include("/app/database/functions.php");
+<?php include("app/database/functions.php");
   
 if (!isLoggedIN()) {
 	header('location: login.php');
