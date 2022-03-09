@@ -33,11 +33,24 @@
 <div class="admin-content">
 <div class="content">
     <h2 class="log-header">Edit User</h2>
+
+<?php 
+
+$query= mysql_query("SELECT * FROM `users` WHERE `id` = '".$row['id']."' ")or die(mysql_error());
+$arr = mysql_fetch_array($query);
+$num = mysql_numrows($query); //this will count the rows (if exists) 
+
+
+?>
+
+
+
+
     <form action="edituser.php" method="post">
         <input type="hidden" name="id" value="" >
         <div>
             <label>Username</label>
-            <input type="text" name="username" value="" class="text-input">
+            <input type="text" name="username" value="<?php echo . $row['id']. ?>" class="text-input">
         </div>
         <div>
             <label>Email</label>
