@@ -4,15 +4,10 @@
     </a>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
-    <?php if(isLoggedIn()){?>
-      <li><a href="/">Dashboard</a></li>
-      <li><a href="transactions.php">Transactions</a></li>
-      <li><a href="expenses.php">Expenses</a></li>
-      <li><a href="income.php">Income</a></li>
-      <li><a href="budget.php">Budget</a></li>
-		  <?php }else{ ?>
+    <?php if(!isLoggedIn()){?>
           <li><a href="login.php">Login</a></li>
           <li><a href="register.php">Register</a></li>
+		  <?php }else{ ?>
         </div>
 		  <?php } ?>
       <?php if(isLoggedIn()){?>
