@@ -43,34 +43,26 @@
 
 
         
+        <table>
+                        <thead>
+                            <th>SN</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th colspan="2">Action</th>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($users as $user): ?>
+                                <tr>
+                                    <td><?php echo $user['id']; ?></td>
+                                    <td><?php echo $user['username']; ?></td>
+                                    <td><?php echo $user['email']; ?></td>
+                                    <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
+                                    <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">delete</a></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
 
-
-        <table class="table table-striped">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>User Name</th>
-            <th>Email</th>
-            <th>User Type</th>
-        </tr>
-    </thead>
-    <tbody>
-    <?php 
-    $users = array();
-    while ($user =  mysql_fetch_assoc($users))
-    {
-
-?>
-    <tr>
-        <td><?php echo $user['username']; ?></td>
-        <td><?php echo $user['email']; ?></td>
-        <td><?php echo $user['user_type']; ?></td>
-    </tr>
-<?php
-    }
-?>
-</tbody>
-</table>
 
 
 
