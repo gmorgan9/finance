@@ -17,7 +17,7 @@ body {
     font-size: 120%;
     background: var(--backgroud);
 } 
-.header {
+/* .header {
     width: 40%;
     margin: 50px auto 0px;
     color: var(--light-text);
@@ -38,7 +38,7 @@ body {
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
-}
+} */
 .btn {
     padding: 10px;
     font-size: 15px;
@@ -52,6 +52,110 @@ body {
     margin-top: -50px;
     position: absolute;
 }
+
+
+
+
+
+
+
+header {
+    background: var(--primary-color);
+    height: 66px;
+  }
+  
+  header * {
+    color: white;
+  }
+  
+  header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+  }
+  
+  header .logo-text {
+    margin: 9px;
+    font-family: "Candal", serif;
+  }
+  
+  header .logo-text span {
+    color: var(--secondary-color);
+  }
+  
+  header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  header ul li {
+    float: left;
+    position: relative;
+  }
+  
+  header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+  }
+  
+  header ul li:hover ul {
+    display: block;
+  }
+  
+  header ul li ul li {
+    width: 100%;
+  }
+  
+  header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: #444;
+  }
+  
+  header ul li ul li a.logout {
+    color: red;
+  }
+  /* header dropdown */
+  header ul li ul li a:hover {
+    background: lightgray;
+  }
+  
+  header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+  /* header buttons */
+  header ul li a:hover {
+    background: var(--secondary-color);
+    transition: 0.5s;
+  }
+  
+  header .menu-toggle {
+    display: none;
+  }
+  
+  .page-wrapper {
+    min-height: 100%;
+  }
+  
+  .page-wrapper a:hover {
+    color: var(--hover-color);
+  }
+
+
+
+
+
+
+
 
 /* FORM */
 form, .message-content {
