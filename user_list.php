@@ -55,36 +55,20 @@
         </tr>
     </thead>
     <tbody>
-        <?php
+    <?php 
+    $users = array();
+    while ($user =  mysql_fetch_assoc($users))
+    {
 
-
-$sql = "SELECT * FROM users";
-$result = mysqli_query($db, $sql) or die("error");
-if(mysqli_num_rows($result) > 0) {
-    while($users = mysqli_fetch_assoc($result)) {
-        $id = $users['id'];
-        $username = $users['username'];
-        $email = $users['email'];
-        $user_type = $users['user_type'];
-    }
-}
 ?>
-
-<?php foreach ($users as $user): ?>
     <tr>
-        <td><?php echo $id ?></td>
         <td><?php echo $user['username']; ?></td>
         <td><?php echo $user['email']; ?></td>
-        <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
-        <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">delete</a></td>
+        <td><?php echo $user['user_type']; ?></td>
     </tr>
-<?php endforeach; ?>
-
-<td><?php echo $id; ?></td>
-<td><?php echo $username; ?></td>
-<td><?php echo $email; ?></td>
-<td><?php echo $user_type; ?></td>
-
+<?php
+    }
+?>
 </tbody>
 </table>
 
