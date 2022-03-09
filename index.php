@@ -10,7 +10,7 @@ if (!isLoggedIN()) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Dashboard</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
     <link rel="icon" type="image/x-icon" href="fav.png?v=<?php echo time(); ?>">
@@ -24,7 +24,7 @@ if (!isLoggedIN()) {
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
     rel="stylesheet">
-    
+
 </head>
 <body>
 	<!-- <div class="header">
@@ -33,7 +33,7 @@ if (!isLoggedIN()) {
   <?php include("header.php") ?>
     <div class="main-content">
         <p>
-            This is some random content!
+            Dashboard
         </p>
     </div>
 </body>

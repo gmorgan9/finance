@@ -5,7 +5,7 @@
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
     <?php if(isLoggedIn()){?>
-      <li><a href="/">Home</a></li>
+      <li><a href="/">Dashboard</a></li>
       <li><a href="transactions.php">Transactions</a></li>
       <li><a href="expenses.php">Expenses</a></li>
       <li><a href="income.php">Income</a></li>
