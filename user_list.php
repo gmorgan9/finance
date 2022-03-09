@@ -51,10 +51,10 @@ if (mysqli_connect_errno())
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$result = mysqli_query($con,"SELECT * FROM users");
+$result = mysqli_query($con,"SELECT * FROM users ORDER by id");
 
 ?>
-<table>
+<table style="border='1'">
     <thead>
         <th>ID</th>
         <th>Username</th>
