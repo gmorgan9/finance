@@ -1,6 +1,5 @@
-<?php include("../../path.php"); ?>
-<?php include(ROOT_PATH . "/app/controllers/users.php"); 
-adminOnly();
+<?php 
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
