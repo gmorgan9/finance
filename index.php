@@ -13,11 +13,11 @@ if (!isLoggedIN()) {
 	<title>Home</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
-    <!-- <link rel="icon" type="image/x-icon" href="logo.png"> -->
+    <link rel="icon" type="image/x-icon" href="fav.png">
 </head>
 <body>
 	<div class="header">
-		<h2>Home Page</h2>
+		<h2>Dashboard</h2>
 	
         
         </div>
