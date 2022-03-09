@@ -71,7 +71,7 @@ if(mysqli_num_rows($result) > 0) {
 ?>
 
 <?php 
-    $projects = array();
+    $users = array();
     while ($user =  mysql_fetch_assoc($records))
     {
         $users[] = $user;
