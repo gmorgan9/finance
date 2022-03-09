@@ -64,7 +64,9 @@ while($row = mysql_fetch_array($query)){
     echo "<td>".$row['email']."</td>";
     echo "<td>".$row['user_type']."</td>";
     echo "</tr>";
-}
+} else {
+    echo '<b>MySQL error:</b><br>' . mysql_error() . '<br />';
+  }
 ?>
 
 </tbody>
