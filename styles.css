@@ -395,12 +395,12 @@ pre {
 .card {
   border: 1px solid black;
   margin-left: 25px;
+  border-radius: 10px;
 }
 
 .dash-cards {
   margin-top: 25px;
-  border-radius: 10px;
-  margin-left: 20%;
+  margin-left: 10%;
   display: flex;
   flex-direction: row;
 }
