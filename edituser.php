@@ -52,7 +52,7 @@
             <input type="password" name="passwordConf" value="" class="text-input">
         </div>
         <div>
-        <?php if(isAdmin()){ ?>              
+        <?php if(userAdmin()){ ?>              
         <label>
             <input type="checkbox" name="admin" checked>
             Admin

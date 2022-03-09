@@ -7,9 +7,10 @@ session_start();
 $db = mysqli_connect('localhost', 'gmorg', 'gmorgpass', 'finances');
 
 // variable declaration
-$username = "";
-$email    = "";
-$errors   = array(); 
+$username 	= "";
+$email    	= "";
+$user_type 	= "";
+$errors  	= array(); 
 
 // call the register() function if register_btn is clicked
 if (isset($_POST['register_btn'])) {
@@ -164,6 +165,16 @@ function login(){
 function isAdmin()
 {
 	if (isset($_SESSION['user']) && $_SESSION['user']['user_type'] == 'admin' ) {
+		return true;
+	}else{
+		return false;
+	}
+}
+
+
+function userAdmin()
+{
+	if ($usertype == 'admin' ) {
 		return true;
 	}else{
 		return false;
