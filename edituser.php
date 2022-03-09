@@ -16,18 +16,33 @@ if (!isAdmin()) {
 	<div class="log-header">
 		<h2>Admin - create user</h2>
 	</div>
+
+
+
+    <?php
+    $con=mysqli_connect("localhost","gmorg","gmorgpass","finances");
+    // Check connection
+    if (mysqli_connect_errno())
+    {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    
+    $result = mysqli_query($con,"SELECT * FROM users ORDER by id")
+?>
 	
 	<form method="post" action="create_user.php">
 
 		<?php echo display_error(); ?>
 
+        <?php 
+        while($row = mysqli_fetch_array($result))
+        { ?>
 		<div class="input-group">
 			<label>Username</label>
-			<input type="text" name="username" value="<?php echo $username; ?>">
+			<input type="text" name="username" value="<?php echo $row['username']; ?>">
 		</div>
 		<div class="input-group">
 			<label>Email</label>
-			<input type="email" name="email" value="<?php echo $email; ?>">
+			<input type="email" name="email" value="<?php echo $row['email']; ?>">
 		</div>
 		<div class="input-group">
 			<label>User type</label>
@@ -50,5 +65,6 @@ if (!isAdmin()) {
 			<a href="profileinfo.php" name="btn" class="log-btn">Back</a>
 		</div>
 	</form>
+    <?php } ?>
 </body>
 </html>
