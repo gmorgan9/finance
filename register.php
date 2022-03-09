@@ -49,7 +49,7 @@ if (isLoggedIN()) {
 		<input type="password" name="password_2">
 	</div>
 	<div class="input-group">
-			<button type="submit" class="log-btn" name="register_btn">Register</button>
+			<button type="submit" class="log-btn" name="login_btn">Register</button>
 		</div>
 	<p>
 		Already a member? <a href="login.php">Sign in</a>
