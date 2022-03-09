@@ -26,7 +26,7 @@ if (!isAdmin()) {
     {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     
-    $result = mysqli_query($con,"SELECT * FROM users ORDER by id")
+    $result = mysqli_query($con,"SELECT  FROM users ORDER by id")
 ?>
 	
 	<form method="post" action="create_user.php">
