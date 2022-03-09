@@ -57,7 +57,7 @@
     <tbody>
         <?php
 $query = $sqlLink->query("SELECT * FROM users ORDER by id");
-while($row = $query->fetch_array()){
+while($row = mysql_fetch_array($query)){
     echo "<tr>";
     echo "<td>".$row['id']."</td>";
     echo "<td>".$row['username'].$row['lastname']."</td>";
