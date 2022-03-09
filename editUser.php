@@ -1,4 +1,4 @@
-<?php include("app/database/functions.php") ?>
+<?php include("functions.php"); ?>
 
 <!DOCTYPE html>
 <html>

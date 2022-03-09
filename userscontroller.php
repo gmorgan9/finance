@@ -1,8 +1,8 @@
-<?php
+<?php 
 
-include("/app/database/functions.php");
-include("/app/helpers/middleware.php");
-include("/app/helpers/validateUser.php");
+include("functions.php");
+include("middleware.php");
+include("validateUser.php");
 
 
 $table = 'users';

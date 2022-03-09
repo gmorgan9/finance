@@ -1,4 +1,4 @@
-<?php include("app/database/functions.php"); ?>
+<?php include("functions.php"); ?>
  
 <!DOCTYPE html>
 <html>
@@ -26,7 +26,7 @@
 	</div>
 	<div class="input-group">
 		<button type="submit" class="log-btn" name="reset_btn">Reset Password</button>
-        <a href="javascript:history.back()" name="btn" class="log-btn">Back</a>
+        <a href="profileinfo.php" name="btn" class="log-btn">Back</a>
 	</div>
 </form>   
 </body>
