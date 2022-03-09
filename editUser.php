@@ -51,16 +51,20 @@
             <label>Password Confirmation</label>
             <input type="password" name="passwordConf" value="" class="text-input">
         </div>
-        <div>              
-        <label>
-            <input type="checkbox" name="admin" checked>
-            Admin
-        </label>          
-        <label>
-            <input type="checkbox" name="admin">
-            Admin
-</label>                
-        </div>
+        <div>
+                            <?php if (isset($admin) && $admin == 1): ?>
+                                <label>
+                                    <input type="checkbox" name="admin" checked>
+                                    Admin
+                                </label>
+                            <?php else: ?>
+                                <label>
+                                    <input type="checkbox" name="admin">
+                                    Admin
+                                </label>
+                            <?php endif; ?>
+                            
+                        </div>
         <div>
             <button type="submit" name="update-user" class="btn btn-big">Update User</button>
         </div>
