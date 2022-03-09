@@ -54,7 +54,7 @@ html,
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
 }
-.log-header {
+.log-header h2 {
   color: unset;
   color: white;
 }
