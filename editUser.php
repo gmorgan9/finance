@@ -42,15 +42,12 @@ if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-$result = mysqli_query($con,"SELECT id FROM users");
-$row = mysqli_fetch_array($result);
+$id = mysqli_query($con,"SELECT * FROM users");
+$getID = mysqli_fetch_array($id);
 
-$result = mysqli_query($con,"SELECT * FROM users WHERE id = '" . $row['id'] . "'");
+$result = mysqli_query($con,"SELECT * FROM users WHERE id = '" . $getID['id'] . "'");
 
 ?>
-
-
-
 
     <form action="edituser.php" method="post">
         <input type="hidden" name="id" value="" >
