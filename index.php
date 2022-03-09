@@ -36,11 +36,7 @@ if (!isLoggedIN()) {
 
 </head>
 <body>
-
-
-
-
-  <?php include("includes/header.php") ?>
+<?php include("includes/header.php") ?>
 
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
