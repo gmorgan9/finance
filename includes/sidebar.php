@@ -1,7 +1,9 @@
 <div class="left-sidebar">
     <ul>
-        <li><a href="/admin/posts/index.php">Manage Posts</a></li>
-        <li><a href="/admin/users/index.php">Manage Users</a></li>
-        <li><a href="/admin/topics/index.php">Manage Topics</a></li>
+      <li><a href="/">Dashboard</a></li>
+      <li><a href="transactions.php">Transactions</a></li>
+      <li><a href="expenses.php">Expenses</a></li>
+      <li><a href="income.php">Income</a></li>
+      <li><a href="budget.php">Budget</a></li>
     </ul>
 </div>
