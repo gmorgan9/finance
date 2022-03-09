@@ -60,7 +60,7 @@ $query = $sqlLink->query("SELECT * FROM users ORDER by id");
 while($row = mysql_fetch_array($query)){
     echo "<tr>";
     echo "<td>".$row['id']."</td>";
-    echo "<td>".$row['username'].$row['lastname']."</td>";
+    echo "<td>".$row['username']."</td>";
     echo "<td>".$row['email']."</td>";
     echo "<td>".$row['user_type']."</td>";
     echo "</tr>";
