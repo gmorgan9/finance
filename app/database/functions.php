@@ -172,16 +172,6 @@ function isAdmin()
 }
 
 
-function userAdmin()
-{
-	if ($_POST['user']['user_type'] == 'admin' ) {
-		return true;
-	}else{
-		return false;
-	}
-}
-
-
 
 
 // call the register() function if register_btn is clicked
@@ -214,5 +204,36 @@ function resetPass(){
 			mysqli_query($db, $sql);
 			$_SESSION['success']  = "Password successfully updated";
 			header('location: profileinfo.php');		
+		}
+	}
+
+
+
+
+
+
+
+	if (isset($_POST['update-user'])) {
+		adminOnly();
+		$errors = validateUser($_POST);
+	
+		if (count($errors) === 0) {
+			$id = $_POST['id'];
+			unset($_POST['passwordConf'], $_POST['update-user'], $_POST['id']);
+			$_POST['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
+			
+			$_POST['admin'] = isset($_POST['admin']) ? 1 : 0;
+			$count = update($table, $id, $_POST);
+			$_SESSION['message'] = 'Admin user created';
+			$_SESSION['type'] = 'success';
+			header('location: ' . BASE_URL . '/admin/users/index.php'); 
+			exit();
+			
+		} else {
+			$username = $_POST['username'];
+			$admin = isset($_POST['admin']) ? 1 : 0;
+			$email = $_POST['email'];
+			$password = $_POST['password'];
+			$passwordConf = $_POST['passwordConf'];
 		}
 	}
