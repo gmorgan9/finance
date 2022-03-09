@@ -21,26 +21,30 @@
   height: calc(100% - 66px);
   }
   
-  .admin-wrapper .left-sidebar {
+  .admin-wrapper,
+  .left-sidebar {
   flex: 2;
   height: 100%;
   background: var(--hover-color);
   }
   
-  .admin-wrapper .left-sidebar ul {
+  .admin-wrapper,
+  .left-sidebar ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
   color: aliceblue;
   }
   
-  .admin-wrapper .left-sidebar ul li a {
+  .admin-wrapper,
+  .left-sidebar ul li a {
   padding: 18px;
   display: block;
   border-bottom: 1px solid var(--hover-color);
   }
   
-  .admin-wrapper .left-sidebar ul li a:hover {
+  .admin-wrapper,
+  .left-sidebar ul li a:hover {
   background: var(--hover-color);
   }
   
