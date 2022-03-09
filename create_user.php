@@ -2,7 +2,7 @@
 
 <?php 
 if (!isAdmin()) {
-	header('location: index.php');
+	header('location: /');
 }
 ?>
 <!DOCTYPE html>
@@ -46,8 +46,8 @@ if (!isAdmin()) {
 			<input type="password" name="password_2">
 		</div>
 		<div class="input-group">
-			<button type="submit" class="log-btn" name="btn">Create user</button>
-			<a href="javascript:history.back()" name="btn" class="log-btn">Back</a>
+			<button type="submit" class="log-btn" name="register-btn">Create user</button>
+			<a href="profileinfo.php" name="btn" class="log-btn">Back</a>
 		</div>
 	</form>
 </body>
