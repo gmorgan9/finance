@@ -27,12 +27,12 @@
 
     <body>
         
-    <?php include("/includes/Header.php"); ?>
+    <?php include("includes/Header.php"); ?>
 
         <!-- Admin Page Wrapper -->
         <div class="admin-wrapper">
 
-        <?php include("/includes/Sidebar.php"); ?>
+        <?php include("includes/Sidebar.php"); ?>
 
 
             <!-- Admin Content -->
