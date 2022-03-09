@@ -43,26 +43,33 @@
 
 
         
-        <table>
-                        <thead>
-                            <th>SN</th>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th colspan="2">Action</th>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($users as $key => $user): ?>
-                                <tr>
-                                    <td><?php echo $key + 1; ?></td>
-                                    <td><?php echo $user['username']; ?></td>
-                                    <td><?php echo $user['email']; ?></td>
-                                    <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
-                                    <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">delete</a></td>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+        <?php
+$con=mysqli_connect("localhost","gmorg","gmorgpass","finances");
+// Check connection
+if (mysqli_connect_errno())
+{
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
 
+$result = mysqli_query($con,"SELECT * FROM users");
+
+echo "<table border='1'>
+<tr>
+<th>Username</th>
+<th>Email</th>
+</tr>";
+
+while($row = mysqli_fetch_array($result))
+{
+echo "<tr>";
+echo "<td>" . $row['username'] . "</td>";
+echo "<td>" . $row['email'] . "</td>";
+echo "</tr>";
+}
+echo "</table>";
+
+mysqli_close($con);
+?>
 
 
 
