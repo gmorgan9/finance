@@ -33,19 +33,17 @@
 <div class="admin-content">
 <div class="content">
     <h2 class="log-header">Edit User</h2>
+ 
 
-<?php 
-
-$result = mysql_query("SELECT * FROM users WHERE id = '" . $row['id'] . "'")
-    or die(mysql_error());
-if(mysql_num_rows($result) == 1) {
-    //Found the user
-    $row = mysql_fetch_array($result);
-    //Results can be accessed like $row['username'] and $row['Email']
-} else {
-    //Too few or too many records were found
+<?php
+$con=mysqli_connect("localhost","gmorg","gmorgpass","finances");
+// Check connection
+if (mysqli_connect_errno())
+{
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
+$result = mysqli_query($con,"SELECT * FROM users WHERE id = '" . $row['id'] . "'");
 
 ?>
 
@@ -54,6 +52,16 @@ if(mysql_num_rows($result) == 1) {
 
     <form action="edituser.php" method="post">
         <input type="hidden" name="id" value="" >
+
+        <?php
+        while($row = mysqli_fetch_array($result))
+            { 
+                echo "<tr>";
+                echo "<td>" . $row['id'] . "</td>";
+                echo "<td>" . $row['username'] . "</td>";
+                echo "<td>" . $row['user_type'] . "</td>";
+                ?> 
+                ?>
         <div>
             <label>Username</label>
             <input type="text" name="username" value="<?php echo . $row['username']. ?>" class="text-input">
