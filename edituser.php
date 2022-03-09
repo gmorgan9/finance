@@ -26,8 +26,6 @@
 
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
-
-<?php include("includes/sidebar.php") ?>
         
 <!-- Admin Content -->
 <div class="admin-content">
