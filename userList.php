@@ -4,7 +4,7 @@
         header('location: login.php');
     }
 include("userscontroller.php"); 
-adminOnly();
+// adminOnly();
 ?>
 
 <!DOCTYPE html>
