@@ -1,21 +1,19 @@
 <?php 
 	include('functions.php');
-  
-if (!isLoggedIN()) {
-	header('location: login.php');
-}
-    
+    if (!isLoggedIn()) {
+        $_SESSION['msg'] = "You must log in first";
+        header('location: login.php');
+    }
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Expenses</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
-    <link rel="icon" type="image/x-icon" href="fav.png?v=<?php echo time(); ?>">
+	<title>Profile Info</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
 
-    <!-- Font Awesome -->
+	<!-- Font Awesome -->
     <link rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -27,11 +25,20 @@ if (!isLoggedIN()) {
     
 </head>
 <body>
-  <?php include("header.php") ?>
-    <div class="main-content">
-        <p>
-            User List page
-        </p>
-    </div>
+	<div class="log-header">
+		<h2>Profile Information</h2>
+	</div>
+	<div class="message-content">
+		<!-- notification message -->
+		<?php if (isset($_SESSION['success'])) : ?>
+			<div class="error success" >
+				<h3>
+					<?php 
+						echo $_SESSION['success']; 
+						unset($_SESSION['success']);
+					?>
+				</h3>
+			</div>
+		<?php endif ?>
 </body>
 </html>
