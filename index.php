@@ -36,19 +36,25 @@ if (!isLoggedIN()) {
 
 </head>
 <body>
-	<!-- <div class="header">
-		<h2>Dashboard</h2>
-  </div> -->
-  
+
+
+
+
   <?php include("includes/header.php") ?>
-  <div class="admin-wrapper">
-  
-  <?php include("includes/sidebar.php") ?>
 
+<!-- Admin Page Wrapper -->
+<div class="admin-wrapper">
 
-  <div class="admin-content">
-    <div class="content">
-  <div class="dash-cards">
+<?php include("includes/sidebar.php") ?>
+        
+<!-- Admin Content -->
+<div class="admin-content">
+
+<div class="content">
+
+    <h2 class="page-title">Dashboard</h2>
+
+    <div class="dash-cards">
   <div class="card" id="currexp" style="width: 18rem;">
   <div class="card-body">
     <img src="calendar.png" alt="">
@@ -91,9 +97,13 @@ if (!isLoggedIN()) {
 </div>
   </div>
 
-  </div>
-  </div>
-  </div>
+</div>
+
+</div>
+<!-- // Admin Content -->
+
+</div>
+<!-- // Page Wrapper -->
 
 
 
