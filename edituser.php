@@ -1,4 +1,3 @@
-
 <?php include("functions.php") ?>
 
 <!DOCTYPE html>
@@ -32,39 +31,42 @@
         
 <!-- Admin Content -->
 <div class="admin-content">
-                <div class="content">
 
-                    <h2 class="log-header">Edit User</h2>
+<div class="content">
 
-                    <form action="edituser.php" method="post">
-                        <input type="hidden" name="id" value="" >
-                        <div>
-                            <label>Username</label>
-                            <input type="text" name="username" value="" class="text-input">
-                        </div>
-                        <div>
-                            <label>Email</label>
-                            <input type="email" name="email" value="" class="text-input">
-                        </div>
-                        <div>
-                            <label>Password</label>
-                            <input type="password" name="password" value="" class="text-input">
-                        </div>
-                        <div>
-                            <label>Password Confirmation</label>
-                            <input type="password" name="passwordConf" value="" class="text-input">
-                        </div>
-                        <div>
-                            
-                                <label>
-                                    <input type="checkbox" name="admin" checked>
-                                    Admin
-                                </label>
-                            
-                                <label>
-                                    <input type="checkbox" name="admin">
-                                    Admin
-                                </label>
+<h2 class="log-header">Expenses</h2>
+<div class="content">
+    <h2 class="log-header">Edit User</h2>
+    <form action="edituser.php" method="post">
+        <input type="hidden" name="id" value="" >
+        <div>
+            <label>Username</label>
+            <input type="text" name="username" value="" class="text-input">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" value="" class="text-input">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" value="" class="text-input">
+        </div>
+        <div>
+            <label>Password Confirmation</label>
+            <input type="password" name="passwordConf" value="" class="text-input">
+        </div>
+        <div>
+        <?php if(isAdmin()){ ?>              
+        <label>
+            <input type="checkbox" name="admin" checked>
+            Admin
+        </label>
+                 <?php } else { ?>           
+        <label>
+            <input type="checkbox" name="admin">
+            Admin
+        </label>
+        <?php } ?>
                           
                             
                         </div>
