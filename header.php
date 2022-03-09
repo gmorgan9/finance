@@ -4,6 +4,7 @@
       <li class="nav-list-item"><a class="nav-list-link" href="transactions.php">Transactions</a></li>
       <li class="nav-list-item"><a class="nav-list-link" href="expenses.php">Expenses</a></li>
       <li class="nav-list-item"><a class="nav-list-link" href="income.php">Income</a></li>
+      <li class="nav-list-item"><a class="nav-list-link" href="budget.php">Budget</a></li>
     </div>
     <hr style="width:50%">
     <div class="nav-list-log">
