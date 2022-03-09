@@ -386,3 +386,16 @@ pre {
 }
 
 
+
+
+
+
+/* DASH CARDS */
+
+.card {
+  border: 1px solid black;
+}
+
+.dash-cards {
+  display: inline-block;
+}
