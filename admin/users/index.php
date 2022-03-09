@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Profile Info</title>
+	<title>User Info</title>
 	<meta name="viewport" content="width=device-width">
 	
 	<!-- Custom Styles -->
@@ -30,7 +30,7 @@
 </head>
 <body>
 	<div class="log-header">
-		<h2>Profile Information</h2>
+		<h2>User Information</h2>
 	</div>
 	<div class="message-content">
 		<!-- notification message -->
@@ -73,8 +73,8 @@ echo "<td>" . $row['id'] . "</td>";
 echo "<td>" . $row['username'] . "</td>";
 echo "<td>" . $row['user_type'] . "</td>";
 ?>
-<td><a href="edituser.php?id=<?php echo $row['id']; ?>" class="edit">edit</a></td>
-<td><a href="user_list.php?delete_id=<?php echo $row['id']; ?>" class="delete">delete</a></td>
+<td><a href="admin/users/edit.php?id=<?php echo $row['id']; ?>" class="edit">edit</a></td>
+<td><a href="admin/users/index.php?delete_id=<?php echo $row['id']; ?>" class="delete">delete</a></td>
 <?php
 echo "</tr>";
 }
