@@ -64,14 +64,16 @@ $result = mysqli_query($con,"SELECT * FROM users");
     </thead>
 <?php
 while($row = mysqli_fetch_array($result))
-{ ?>
-<tr>
-<td><?php echo " . $row['id'] . "?></td>
-<td><?php echo " . $row['username'] . "?></td>
-<td><?php echo " . $row['email'] . "?></td>
-<td><?php echo " . $row['user_type'] . "?></td>
-<?php
+{
+echo "<tr>";
+echo "<td>" . $row['id'] . "</td>";
+echo "<td>" . $row['username'] . "</td>";
+echo "<td>" . $row['email'] . "</td>";
+echo "<td>" . $row['user_type'] . "</td>";
+echo "</tr>";
 }
+echo "</table>";
+
 mysqli_close($con);
 ?>
 
