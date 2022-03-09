@@ -36,9 +36,15 @@
 
 <?php 
 
-$query= mysql_query("SELECT * FROM `users` WHERE `id` = '".$row['id']."' ")or die(mysql_error());
-$arr = mysql_fetch_array($query);
-$num = mysql_numrows($query); //this will count the rows (if exists) 
+$result = mysql_query("SELECT * FROM users WHERE id = '" . $row['id'] . "'")
+    or die(mysql_error());
+if(mysql_num_rows($result) == 1) {
+    //Found the user
+    $row = mysql_fetch_array($result);
+    //Results can be accessed like $row['username'] and $row['Email']
+} else {
+    //Too few or too many records were found
+}
 
 
 ?>
@@ -50,7 +56,7 @@ $num = mysql_numrows($query); //this will count the rows (if exists)
         <input type="hidden" name="id" value="" >
         <div>
             <label>Username</label>
-            <input type="text" name="username" value="<?php echo . $arr['id']. ?>" class="text-input">
+            <input type="text" name="username" value="<?php echo . $row['username']. ?>" class="text-input">
         </div>
         <div>
             <label>Email</label>
