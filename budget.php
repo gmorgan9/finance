@@ -35,12 +35,12 @@ if (!isLoggedIN()) {
 
 </head>
 <body>
-<?php include("app/includes/header.php") ?>
+<?php include("includes/header.php") ?>
 
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
 
-<?php include("app/includes/sidebar.php") ?>
+<?php include("includes/sidebar.php") ?>
         
 <!-- Admin Content -->
 <div class="admin-content">

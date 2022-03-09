@@ -24,7 +24,7 @@
 
     <body>
         
-    <?php include("app/includes/header.php") ?>
+    <?php include("includes/header.php") ?>
 
 <!-- Admin Page Wrapper -->
 <div class="admin-wrapper">
