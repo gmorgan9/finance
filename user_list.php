@@ -53,21 +53,25 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
 $result = mysqli_query($con,"SELECT * FROM users");
 
-echo "<table border='1'>
-<tr>
-<th>Username</th>
-<th>Email</th>
-</tr>";
-
+?>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>User Type</th>
+        <th colspan="2">Action</th>
+    </thead>
+<?php
 while($row = mysqli_fetch_array($result))
-{
-echo "<tr>";
-echo "<td>" . $row['username'] . "</td>";
-echo "<td>" . $row['email'] . "</td>";
-echo "</tr>";
+{ ?>
+<tr>
+<td><?php echo " . $row['id'] . "?></td>
+<td><?php echo " . $row['username'] . "?></td>
+<td><?php echo " . $row['email'] . "?></td>
+<td><?php echo " . $row['user_type'] . "?></td>
+<?php
 }
-echo "</table>";
-
 mysqli_close($con);
 ?>
 
