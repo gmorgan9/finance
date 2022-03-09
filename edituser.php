@@ -1,7 +1,4 @@
-<?php include("../../path.php"); ?>
-<?php include(ROOT_PATH . "/app/controllers/users.php"); 
-adminOnly();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,12 +27,12 @@ adminOnly();
 
     <body>
         
-    <?php include(ROOT_PATH . "/includes/Header.php"); ?>
+    <?php include("/includes/Header.php"); ?>
 
         <!-- Admin Page Wrapper -->
         <div class="admin-wrapper">
 
-        <?php include(ROOT_PATH . "/includes/Sidebar.php"); ?>
+        <?php include("/includes/Sidebar.php"); ?>
 
 
             <!-- Admin Content -->
