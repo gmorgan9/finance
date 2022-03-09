@@ -19,7 +19,7 @@ background: var(--primary-color);
 .left-sidebar {
 flex: 2;
 height: 100%;
-width: 18.5%;
+width: 15%;
 background: var(--hover-color);
 }
 
