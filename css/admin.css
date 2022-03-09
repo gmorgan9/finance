@@ -16,19 +16,12 @@
   background: var(--primary-color);
   }
   
-  .admin-wrapper {
-  display: flex;
-  height: calc(100% - 66px);
-  }
-  
-  .admin-wrapper,
   .left-sidebar {
   flex: 2;
   height: 100%;
   background: var(--hover-color);
   }
   
-  .admin-wrapper,
   .left-sidebar ul {
   list-style: none;
   margin: 0px;
