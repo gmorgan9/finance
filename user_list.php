@@ -58,22 +58,20 @@ $result = mysqli_query($con,"SELECT * FROM users ORDER by id");
     <thead>
         <th>ID</th>
         <th>Username</th>
-        <th>Email</th>
         <th>User Type</th>
         <th colspan="2">Action</th>
     </thead>
 <?php
 while($row = mysqli_fetch_array($result))
-{
-echo "<tr>";
-echo "<td>" . $row['id'] . "</td>";
-echo "<td>" . $row['username'] . "</td>";
-echo "<td>" . $row['email'] . "</td>";
-echo "<td>" . $row['user_type'] . "</td>";
-echo "</tr>";
-}
-echo "</table>";
-
+{ ?>
+<tr>
+<td><?php . $row['id'] . ?></td>;
+<td><?php . $row['username'] . ?></td>;
+<td><?php . $row['user_type'] . ?></td>;
+</tr>
+<?php } ?>
+</table>
+<?php
 mysqli_close($con);
 ?>
 
