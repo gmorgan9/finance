@@ -70,9 +70,9 @@ if(mysqli_num_rows($result) > 0) {
 }
 ?>
 
-<?php foreach ($users as $key => $user): ?>
+<?php foreach ($users as $user): ?>
     <tr>
-        <td><?php echo $key + 1; ?></td>
+        <td><?php echo $user['id']; ?></td>
         <td><?php echo $user['username']; ?></td>
         <td><?php echo $user['email']; ?></td>
         <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
