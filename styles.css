@@ -398,6 +398,9 @@ pre {
   border-radius: 10px;
   padding: 10px;
 }
+#currexp {
+  background-color: rgb(201, 92, 84);
+}
 
 .dash-cards {
   margin-top: 25px;
