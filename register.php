@@ -15,6 +15,7 @@ if (isLoggedIN()) {
 	<link rel="icon" type="image/x-icon" href="fav.png?v=<?php echo time(); ?>">
 </head>
 <body>
+<?php include("header.php") ?>
 <div class="log-header">
 	<h2>Register</h2>
 </div>
