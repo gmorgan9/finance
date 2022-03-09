@@ -76,10 +76,11 @@
                         </div>
 
                         <div>
-						<br/>
-							<a href="user_list.php"><button class="log-btn">Back</button></a>		
+								
                             <button type="submit" name="update-user" class="btn btn-big">Update User</button>
                         </div>
+						<br/>
+							<a href="user_list.php"><button class="log-btn">Back</button></a>
                     </form>
 
                 </div>
