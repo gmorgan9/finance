@@ -43,27 +43,34 @@
 		<?php endif ?>
 
 
-        <table>
-                        <thead>
-                            <th>SN</th>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th colspan="2">Action</th>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($user as $key => $users): ?>
-                                <tr>
-                                    <td><?php echo $key + 1; ?></td>
-                                    <td><?php echo $users['username']; ?></td>
-                                    <td><?php echo $users['email']; ?></td>
-                                    <td><a href="edit.php?id=<?php echo $users['id']; ?>" class="edit">edit</a></td>
-                                    <td><a href="index.php?delete_id=<?php echo $users['id']; ?>" class="delete">delete</a></td>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+        
 
 
+        <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>User Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+include_once('functions.php');
+$query = $sqlLink->query("SELECT * FROM users ORDER by id");
+while($row = $query->fetch_array()){
+    echo "<tr>";
+    echo "<td>".$row['id']."</td>";
+    echo "<td>".$row['username'].$row['lastname']."</td>";
+    echo "<td>".$row['email']."</td>";
+    echo "<td>".$row['user_type']."</td>";
+    echo "</tr>";
+}
+?>
+
+</tbody>
+</table>
 
 
 
