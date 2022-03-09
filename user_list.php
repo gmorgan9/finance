@@ -44,13 +44,15 @@
 
         
 <?php
-    $con=mysqli_connect("localhost","gmorg","gmorgpass","finances");
-    // Check connection
-    if (mysqli_connect_errno())
-    {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    
-    $result = mysqli_query($con,"SELECT * FROM users ORDER by id")
+$con=mysqli_connect("localhost","gmorg","gmorgpass","finances");
+// Check connection
+if (mysqli_connect_errno())
+{
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+$result = mysqli_query($con,"SELECT * FROM users ORDER by id");
+
 ?>
 <table>
     <thead>
@@ -67,7 +69,7 @@ echo "<td>" . $row['id'] . "</td>";
 echo "<td>" . $row['username'] . "</td>";
 echo "<td>" . $row['user_type'] . "</td>";
 ?>
-<td><a href="edituser.php?id=<?php echo $row['id']; ?>" class="edit">edit</a></td>
+<td><a href="edit.php?id=<?php echo $row['id']; ?>" class="edit">edit</a></td>
 <td><a href="user_list.php?delete_id=<?php echo $row['id']; ?>" class="delete">delete</a></td>
 <?php
 echo "</tr>";
