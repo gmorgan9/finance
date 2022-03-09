@@ -18,7 +18,7 @@
         </a>
         <ul>
         <div id="profilelogout">
-          <li><a href="profileinfo.php">Profile</a></li>
+          <li><a href="/admin/profileinfo.php">Profile</a></li>
           <li><a href="index.php?logout='1'">Logout</a></li>
         </div>
 		  <?php }else{ ?>
