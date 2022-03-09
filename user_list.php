@@ -40,5 +40,31 @@
 				</h3>
 			</div>
 		<?php endif ?>
+
+
+        <table>
+                        <thead>
+                            <th>SN</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th colspan="2">Action</th>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($users as $key => $user): ?>
+                                <tr>
+                                    <td><?php echo $key + 1; ?></td>
+                                    <td><?php echo $user['username']; ?></td>
+                                    <td><?php echo $user['email']; ?></td>
+                                    <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
+                                    <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">delete</a></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+
+
+
+
+
 </body>
 </html>
