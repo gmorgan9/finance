@@ -56,7 +56,6 @@
     </thead>
     <tbody>
         <?php
-include_once('functions.php');
 $query = $sqlLink->query("SELECT * FROM users ORDER by id");
 while($row = $query->fetch_array()){
     echo "<tr>";
