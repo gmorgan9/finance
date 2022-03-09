@@ -1,4 +1,7 @@
-
+<?php include("../../path.php"); ?>
+<?php include(ROOT_PATH . "/app/controllers/users.php"); 
+adminOnly();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,29 +21,34 @@
             rel="stylesheet">
 
         <!-- Custom Styles -->
-    	<link rel="stylesheet" href="css/styles.css?v=<?php echo time(); ?>">
-    	<!-- Admin Styles -->
-    	<link rel="stylesheet" href="css/admin.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/styles.css?v=<?php echo time(); ?>">
+    <!-- Admin Styles -->
+    <link rel="stylesheet" href="css/admin.css?v=<?php echo time(); ?>">
 
         <title>Admin Section - Edit User</title>
     </head>
 
     <body>
         
-    <?php include("includes/Header.php"); ?>
+    <?php include("includes/header.php"); ?>
 
         <!-- Admin Page Wrapper -->
         <div class="admin-wrapper">
 
-        <?php include("includes/Sidebar.php"); ?>
+        <?php include("includes/sidebar.php"); ?>
 
+
+            <!-- Admin Content -->
+            <div class="admin-content">
+                <div class="button-group">
+                    <a href="create.php" class="btn btn-big">Add User</a>
+                    <a href="index.php" class="btn btn-big">Manage Users</a>
+                </div>
 
 
                 <div class="content">
 
-                    <h2 class="log-header">Edit User</h2>
-
-                    <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
+                    <h2 class="page-title">Edit User</h2>
 
                     <form action="edit.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $id; ?>" >
@@ -76,11 +84,8 @@
                         </div>
 
                         <div>
-								
                             <button type="submit" name="update-user" class="btn btn-big">Update User</button>
                         </div>
-						<br/>
-							<a href="user_list.php"><button class="log-btn">Back</button></a>
                     </form>
 
                 </div>
@@ -100,7 +105,7 @@
         <script
             src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
         <!-- Custom Script -->
-        <script src="../../assets/js/scripts.js"></script>
+        <!-- <script src="../../assets/js/scripts.js"></script> -->
 
     </body>
 
