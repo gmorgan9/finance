@@ -3,6 +3,8 @@
         $_SESSION['msg'] = "You must log in first";
         header('location: login.php');
     }
+include("userscontroller.php"); 
+adminOnly();
 ?>
 
 <!DOCTYPE html>
