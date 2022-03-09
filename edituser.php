@@ -31,10 +31,6 @@
         
 <!-- Admin Content -->
 <div class="admin-content">
-
-<div class="content">
-
-<h2 class="log-header">Expenses</h2>
 <div class="content">
     <h2 class="log-header">Edit User</h2>
     <form action="edituser.php" method="post">
