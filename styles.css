@@ -8,15 +8,30 @@
 	--green-text: #3c763d;
 	--green-background: #dff0d8;
 }
-* { 
-    margin: 0px; 
-    padding: 0px; 
-    box-sizing: border-box;
-}
-body {
-    font-size: 120%;
-    background: var(--backgroud);
-} 
+html,
+  body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: "Lora", serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Candal", serif;
+    color: #5c5b5b;
+    margin: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 /* .header {
     width: 40%;
     margin: 50px auto 0px;
