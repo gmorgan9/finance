@@ -51,9 +51,9 @@
                             <th colspan="2">Action</th>
                         </thead>
                         <tbody>
-                            <?php foreach ($users as $user): ?>
+                            <?php foreach ($users as $key => $user): ?>
                                 <tr>
-                                    <td><?php echo $user['id']; ?></td>
+                                    <td><?php echo $key + 1; ?></td>
                                     <td><?php echo $user['username']; ?></td>
                                     <td><?php echo $user['email']; ?></td>
                                     <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
