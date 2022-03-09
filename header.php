@@ -22,6 +22,12 @@
       <li><a href="expenses.php">Expenses</a></li>
       <li><a href="income.php">Income</a></li>
       <li><a href="budget.php">Budget</a></li>
+      <?php if(isLoggedIn()){?>
+		  <?php }else{ ?>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="register.php">Register</a></li>
+        </div>
+		  <?php } ?>
       <li><a href="#">
           <i class="fa fa-user"></i>
           <?php echo $_SESSION['user']['username']; ?>
