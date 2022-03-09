@@ -32,7 +32,7 @@
 
 <div class="content">
 
-    <h2 class="page-title">Expenses</h2>
+    <h2 class="log-header">Expenses</h2>
                 <div class="content">
 
                     <h2 class="page-title">Edit User</h2>
