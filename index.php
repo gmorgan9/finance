@@ -18,14 +18,8 @@ if (!isLoggedIN()) {
 <body>
 	<div class="header">
 		<h2>Dashboard</h2>
-	
-        
-        </div>
-
-
-        <?php include("header.php") ?>
-
-
+  </div>
+  <?php include("header.php") ?>
     <div class="main-content">
         <p>
             This is some random content!
