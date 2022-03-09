@@ -56,17 +56,17 @@
                             <input type="password" name="passwordConf" value="" class="text-input">
                         </div>
                         <div>
-                            <?php if (isAdmin()): ?>
+                            
                                 <label>
                                     <input type="checkbox" name="admin" checked>
                                     Admin
                                 </label>
-                            <?php else: ?>
+                            
                                 <label>
                                     <input type="checkbox" name="admin">
                                     Admin
                                 </label>
-                            <?php endif; ?>
+                          
                             
                         </div>
 
