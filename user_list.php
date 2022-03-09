@@ -73,7 +73,7 @@ echo "<td>" . $row['id'] . "</td>";
 echo "<td>" . $row['username'] . "</td>";
 echo "<td>" . $row['user_type'] . "</td>";
 
-echo "<td><a href='edituser.php?id='" . $row['id'] . "class='edit';>edit</a></td>";
+echo "<td><a href='edituser.php?id=" . $row['id'] . "'class='edit';>edit</a></td>";
 echo "</tr>";
 }
 echo "</table>";
