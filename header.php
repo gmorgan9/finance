@@ -20,11 +20,10 @@
         <li>
           <a href="#">
             <i class="fa fa-user"></i>
-            <?php echo $_SESSION['username']; ?>
+            <?php echo $_SESSION['user']['username']; ?>
             <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
           </a>
-          <div class="nav-list-log">
-          <ul class="nav">
+          <ul>
       <li><a href="index.php">Home</a></li>
       <li><a href="transactions.php">Transactions</a></li>
       <li><a href="expenses.php">Expenses</a></li>
