@@ -78,7 +78,7 @@ echo "</table>";
 
 mysqli_close($con);
 ?>
-
+<a href="/profileinfo.php"><button class="log-btn">Back</button></a>
 
 
 </body>
