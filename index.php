@@ -43,7 +43,7 @@ if (!isLoggedIN()) {
   <?php include("includes/sidebar.php") ?>
 
 
-  <div class="admin-wrapper">
+  <div class="admin-content">
   <div class="dash-cards">
   <div class="card" id="currexp" style="width: 18rem;">
   <div class="card-body">

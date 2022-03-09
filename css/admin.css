@@ -16,6 +16,11 @@ header {
 background: var(--primary-color);
 }
 
+.admin-wrapper {
+display: flex;
+height: calc(100% - 66px);
+}
+
 .admin-wrapper,
 .left-sidebar {
 flex: 2;
@@ -51,8 +56,7 @@ height: 100%;
 padding: 40px 100px 100px;
 overflow-y: scroll;
 }
-.admin-content,
-.page-title {
+.admin-content .page-title {
 text-align: center;
 margin-bottom: 1.5rem;
 }
