@@ -1,4 +1,4 @@
-<?php include("app/database/functions.php");
+<?php include("/app/database/functions.php");
     if (!isLoggedIn()) {
         $_SESSION['msg'] = "You must log in first";
         header('location: login.php');
@@ -48,9 +48,9 @@
 		<?php if(isAdmin())
 		{
 		?>
-			<img src="admin.png">
+			<img src="assets/images/admin.png">
 		<?php }else{ ?>
-			<img src="profile.png">
+			<img src="assets/images/profile.png">
 		<?php } ?>
 			<div>
 				<?php  if (isset($_SESSION['user'])) : ?>
@@ -64,13 +64,13 @@
 						?>
       						<a href="index.php?logout='1'"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
-							<a href="admin/users/create.php"><button class="log-btn">Add User</button></a>
-							<a href="admin/users/index.php"><button class="log-btn">Users</button></a>
-							<a href="admin/users/resetpassword.php"><button class="log-btn">Reset Password</button></a>
+							<a href="/admin/users/create.php"><button class="log-btn">Add User</button></a>
+							<a href="/admin/users/index.php"><button class="log-btn">Users</button></a>
+							<a href="/admin/users/resetpassword.php"><button class="log-btn">Reset Password</button></a>
 						<?php }else{ ?>
 							<a href="index.php?logout='1'"><button class="log-btn">Logout</button></a>
 							<a href="/"><button class="log-btn">Home</button></a>
-							<a href="admin/users/resetpassword.php"><button class="log-btn">Reset Password</button></a>
+							<a href="/admin/users/resetpassword.php"><button class="log-btn">Reset Password</button></a>
 						<?php } ?>
 					</small>
 				<?php endif ?>
