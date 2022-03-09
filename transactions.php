@@ -12,6 +12,7 @@ if (!isLoggedIN()) {
 <head>
 	<title>Transactions</title>
     <meta name="viewport" content="width=device-width">
+    
     <link rel="icon" type="image/x-icon" href="fav.png?v=<?php echo time(); ?>">
 
     <!-- Custom Styles -->
@@ -28,15 +29,42 @@ if (!isLoggedIN()) {
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
     rel="stylesheet">
-    
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
 </head>
 <body>
 <?php include("includes/header.php") ?>
-  <?php include("includes/sidebar.php") ?>
-    <div class="main-content">
-        <p>
-            transactions page
-        </p>
-    </div>
+
+<!-- Admin Page Wrapper -->
+<div class="admin-wrapper">
+
+<?php include("includes/sidebar.php") ?>
+        
+<!-- Admin Content -->
+<div class="admin-content">
+
+<div class="content">
+
+    <h2 class="page-title">Transactions</h2>
+
+   
+
+
+
+
+
+</div>
+<!-- // Admin Content -->
+
+</div>
+<!-- // Page Wrapper -->
+
+
+
+
+
 </body>
 </html>
