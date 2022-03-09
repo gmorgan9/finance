@@ -52,13 +52,6 @@ body {
     margin-top: -50px;
     position: absolute;
 }
-
-
-
-
-
-
-
 header {
     background: var(--primary-color);
     height: 66px;
@@ -219,7 +212,7 @@ form, .message-content {
 }
 
 /* Navigation */
-.nav-header{
+/* .nav-header{
     width: 60%;
     margin: 10px auto 0px;
     color: var(--light-text);
@@ -246,7 +239,7 @@ form, .message-content {
     cursor:pointer;
     color:var(--light-text);
     text-decoration:none;
-}
+} */
 /* Column KB Cards */
 .row {
     margin-left: 8%;
